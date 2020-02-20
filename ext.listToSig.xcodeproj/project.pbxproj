@@ -90,6 +90,11 @@
 
 /* Begin PBXFileReference section */
 		12468FBC49A74334B7E0D7DA /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ../../../build/source/projects/ext.listToSig/sources/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		15D1817023FE40890089F6E0 /* opus_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = opus_types.h; path = "../../min-api/max-api/include/opus_types.h"; sourceTree = "<group>"; };
+		15D1817123FE40890089F6E0 /* opus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = opus.h; path = "../../min-api/max-api/include/opus.h"; sourceTree = "<group>"; };
+		15D1817223FE40890089F6E0 /* opus_multistream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = opus_multistream.h; path = "../../min-api/max-api/include/opus_multistream.h"; sourceTree = "<group>"; };
+		15D1817323FE40890089F6E0 /* opus_defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = opus_defines.h; path = "../../min-api/max-api/include/opus_defines.h"; sourceTree = "<group>"; };
+		15D1817D23FE41270089F6E0 /* Opus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Opus.framework; path = "../../min-api/max-api/lib/mac/Opus.framework"; sourceTree = "<group>"; };
 		187B9076F83F49BBA36A28F2 /* ext.listToSig.mxo/Contents/MacOS/ext.listToSig */ = {isa = PBXFileReference; explicitFileType = "wrapper.plug-in"; name = ext.listToSig.mxo/Contents/MacOS/ext.listToSig; path = ext.listToSig.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
 		215F6EA1FC634129B31124AE /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ../../../build/source/projects/ext.listToSig/sources/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		6C5A27FA6BEB47519F8DB1CC /* ext.listToSig.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ext.listToSig.cpp; path = ../../../build/source/projects/ext.listToSig/sources/ext.listToSig.cpp; sourceTree = SOURCE_ROOT; };
@@ -99,6 +104,23 @@
 		AE5271342A1145B19AF1D86F /* ext.listToSig_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = ext.listToSig_test; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		15D1816E23FE402E0089F6E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15D1817823FE40990089F6E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		0DE992013AED4A54AFDF289F /* ext.listToSig_test */ = {
 			isa = PBXGroup;
@@ -107,6 +129,18 @@
 				12468FBC49A74334B7E0D7DA /* CMakeLists.txt */,
 			);
 			name = ext.listToSig_test;
+			sourceTree = "<group>";
+		};
+		15D1816F23FE40890089F6E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15D1817D23FE41270089F6E0 /* Opus.framework */,
+				15D1817323FE40890089F6E0 /* opus_defines.h */,
+				15D1817223FE40890089F6E0 /* opus_multistream.h */,
+				15D1817023FE40890089F6E0 /* opus_types.h */,
+				15D1817123FE40890089F6E0 /* opus.h */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		18CD558762634360A7A25657 /* ALL_BUILD */ = {
@@ -134,6 +168,7 @@
 				18CD558762634360A7A25657 /* ALL_BUILD */,
 				E832428355F24BEDB23C429F /* ZERO_CHECK */,
 				8CCF5B7EB4DF4364BE1F3925 /* Products */,
+				15D1816F23FE40890089F6E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,6 +231,7 @@
 			buildPhases = (
 				5C83C142E00B4412AC84F7B0 /* Sources */,
 				8837D5F73C0D4D51A437E490 /* CMake PostBuild Rules */,
+				15D1816E23FE402E0089F6E0 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,6 +248,7 @@
 			buildConfigurationList = 3035193AB6D44CEA8FF46CA5 /* Build configuration list for PBXNativeTarget "ext.listToSig_test" */;
 			buildPhases = (
 				1E17D8044343479481C67225 /* Sources */,
+				15D1817823FE40990089F6E0 /* Frameworks */,
 			);
 			buildRules = (
 			);

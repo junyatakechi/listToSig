@@ -83,7 +83,4 @@ dependencies: \
   /Users/Takechi/Documents/Max\ 8/Packages/ext/source/min-api/include/../../min-lib/include/c74_lib_onepole.h \
   /Users/Takechi/Documents/Max\ 8/Packages/ext/source/min-api/include/../../min-lib/include/c74_lib_saturation.h \
   /Users/Takechi/Documents/Max\ 8/Packages/ext/source/min-api/include/../../min-lib/include/c74_lib_sync.h \
-  /Users/Takechi/Documents/Max\ 8/Packages/ext/source/min-api/include/../../min-lib/include/c74_lib_oscillator.h \
-  /Users/Takechi/Documents/Max\ 8/Packages/ext/source/min-api/max-api/include/opus.h \
-  /Users/Takechi/Documents/Max\ 8/Packages/ext/source/min-api/max-api/include/opus_types.h \
-  /Users/Takechi/Documents/Max\ 8/Packages/ext/source/min-api/max-api/include/opus_defines.h
+  /Users/Takechi/Documents/Max\ 8/Packages/ext/source/min-api/include/../../min-lib/include/c74_lib_oscillator.h

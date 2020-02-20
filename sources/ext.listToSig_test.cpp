@@ -5,7 +5,6 @@
 
 #include "c74_min_unittest.h"     // required unit test header
 #include "ext.listToSig.cpp"    // need the source of our object so that we can access it
-#include "opus.h"
 
 
 // Unit tests are written using the Catch framework as described at

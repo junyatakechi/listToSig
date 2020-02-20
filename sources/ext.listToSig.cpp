@@ -4,7 +4,7 @@
 ///	@license	Use of this source code is governed by the MIT License found in the License.md file.
 
 #include "c74_min.h"
-#include "opus.h"
+//#include "opus.h"
 
 using namespace c74::min;
 
@@ -44,11 +44,11 @@ public:
         play_point = buf_length - 128;
 			
 				//opus init
-				dec = opus_decoder_create(48000, 1, err);
-				if(*err!=OPUS_BAD_ARG || dec!=NULL)
-						cout << "DECODER CREATED!" << endl;
-				else
-						cout << "error: opus init" << endl;
+//				dec = opus_decoder_create(48000, 1, err);
+//				if(*err!=OPUS_BAD_ARG || dec!=NULL)
+//						cout << "DECODER CREATED!" << endl;
+//				else
+//						cout << "error: opus init" << endl;
     };
 	
     // respond to the bang message to do something
@@ -118,7 +118,7 @@ private:
 	long rec_point = 0;
 	long play_point = 0;
 	//Opus decoder
-	OpusDecoder *dec;
+	//OpusDecoder *dec;
 	int *err;
 				
 	//lib::sync m_oscillator;

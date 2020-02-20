@@ -90,11 +90,6 @@
 
 /* Begin PBXFileReference section */
 		12468FBC49A74334B7E0D7DA /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ../../../build/source/projects/ext.listToSig/sources/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		15D1817023FE40890089F6E0 /* opus_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = opus_types.h; path = "../../min-api/max-api/include/opus_types.h"; sourceTree = "<group>"; };
-		15D1817123FE40890089F6E0 /* opus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = opus.h; path = "../../min-api/max-api/include/opus.h"; sourceTree = "<group>"; };
-		15D1817223FE40890089F6E0 /* opus_multistream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = opus_multistream.h; path = "../../min-api/max-api/include/opus_multistream.h"; sourceTree = "<group>"; };
-		15D1817323FE40890089F6E0 /* opus_defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = opus_defines.h; path = "../../min-api/max-api/include/opus_defines.h"; sourceTree = "<group>"; };
-		15D1817D23FE41270089F6E0 /* Opus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Opus.framework; path = "../../min-api/max-api/lib/mac/Opus.framework"; sourceTree = "<group>"; };
 		187B9076F83F49BBA36A28F2 /* ext.listToSig.mxo/Contents/MacOS/ext.listToSig */ = {isa = PBXFileReference; explicitFileType = "wrapper.plug-in"; name = ext.listToSig.mxo/Contents/MacOS/ext.listToSig; path = ext.listToSig.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
 		215F6EA1FC634129B31124AE /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ../../../build/source/projects/ext.listToSig/sources/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		6C5A27FA6BEB47519F8DB1CC /* ext.listToSig.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ext.listToSig.cpp; path = ../../../build/source/projects/ext.listToSig/sources/ext.listToSig.cpp; sourceTree = SOURCE_ROOT; };
@@ -134,11 +129,6 @@
 		15D1816F23FE40890089F6E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				15D1817D23FE41270089F6E0 /* Opus.framework */,
-				15D1817323FE40890089F6E0 /* opus_defines.h */,
-				15D1817223FE40890089F6E0 /* opus_multistream.h */,
-				15D1817023FE40890089F6E0 /* opus_types.h */,
-				15D1817123FE40890089F6E0 /* opus.h */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

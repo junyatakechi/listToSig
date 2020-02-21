@@ -90,7 +90,7 @@
 
 /* Begin PBXFileReference section */
 		12468FBC49A74334B7E0D7DA /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ../../../build/source/projects/ext.listToSig/sources/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		187B9076F83F49BBA36A28F2 /* ext.listToSig.mxo/Contents/MacOS/ext.listToSig */ = {isa = PBXFileReference; explicitFileType = "wrapper.plug-in"; name = ext.listToSig.mxo/Contents/MacOS/ext.listToSig; path = ext.listToSig.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
+		187B9076F83F49BBA36A28F2 /* ext.listToSig.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ext.listToSig.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
 		215F6EA1FC634129B31124AE /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ../../../build/source/projects/ext.listToSig/sources/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		6C5A27FA6BEB47519F8DB1CC /* ext.listToSig.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ext.listToSig.cpp; path = ../../../build/source/projects/ext.listToSig/sources/ext.listToSig.cpp; sourceTree = SOURCE_ROOT; };
 		8ED1D4C938B647808A66AE53 /* ext.listToSig_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ext.listToSig_test.cpp; path = ../../../build/source/projects/ext.listToSig/sources/ext.listToSig_test.cpp; sourceTree = SOURCE_ROOT; };
@@ -174,7 +174,7 @@
 		8CCF5B7EB4DF4364BE1F3925 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				187B9076F83F49BBA36A28F2 /* ext.listToSig.mxo/Contents/MacOS/ext.listToSig */,
+				187B9076F83F49BBA36A28F2 /* ext.listToSig.mxo */,
 				AE5271342A1145B19AF1D86F /* ext.listToSig_test */,
 			);
 			name = Products;
@@ -230,7 +230,7 @@
 			);
 			name = ext.listToSig;
 			productName = ext.listToSig;
-			productReference = 187B9076F83F49BBA36A28F2 /* ext.listToSig.mxo/Contents/MacOS/ext.listToSig */;
+			productReference = 187B9076F83F49BBA36A28F2 /* ext.listToSig.mxo */;
 			productType = "com.apple.product-type.bundle";
 		};
 		CD869906F10440A285A97159 /* ext.listToSig_test */ = {
@@ -401,7 +401,7 @@
 				);
 				INFOPLIST_FILE = "/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/CMakeFiles/ext.listToSig.dir/Info.plist";
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
 				LIBRARY_STYLE = BUNDLE;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -4983,7 +4983,7 @@
 				);
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/tests/MinSizeRel\"";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DNDEBUG",
@@ -7380,7 +7380,7 @@
 				);
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/tests/RelWithDebInfo\"";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DNDEBUG",
@@ -9731,7 +9731,7 @@
 				);
 				INFOPLIST_FILE = "/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/CMakeFiles/ext.listToSig.dir/Info.plist";
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
 				LIBRARY_STYLE = BUNDLE;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -14315,7 +14315,7 @@
 				);
 				INFOPLIST_FILE = "/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/CMakeFiles/ext.listToSig.dir/Info.plist";
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
 				LIBRARY_STYLE = BUNDLE;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -19021,7 +19021,7 @@
 				);
 				INFOPLIST_FILE = "/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/CMakeFiles/ext.listToSig.dir/Info.plist";
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
 				LIBRARY_STYLE = BUNDLE;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -23632,7 +23632,7 @@
 				);
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/tests\"";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++1z'  ";
 				OTHER_LDFLAGS = (
@@ -26018,7 +26018,7 @@
 				);
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/tests\"";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DNDEBUG",

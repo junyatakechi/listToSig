@@ -46,6 +46,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		15FF0F66240243C30039EDCC /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15FF0F65240243C30039EDCC /* libopus.a */; };
+		15FF0F67240243C30039EDCC /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15FF0F65240243C30039EDCC /* libopus.a */; };
 		86A56B1408AB46B8BC987194 /* ext.listToSig_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8ED1D4C938B647808A66AE53 /* ext.listToSig_test.cpp */; };
 		FC3F5184ACCC4FC4A5BC19E2 /* ext.listToSig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A27FA6BEB47519F8DB1CC /* ext.listToSig.cpp */; };
 /* End PBXBuildFile section */
@@ -90,6 +92,8 @@
 
 /* Begin PBXFileReference section */
 		12468FBC49A74334B7E0D7DA /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ../../../build/source/projects/ext.listToSig/sources/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		15FF0F65240243C30039EDCC /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
+		15FF0F682402440A0039EDCC /* headers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = headers; sourceTree = "<group>"; };
 		187B9076F83F49BBA36A28F2 /* ext.listToSig.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ext.listToSig.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
 		215F6EA1FC634129B31124AE /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ../../../build/source/projects/ext.listToSig/sources/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		6C5A27FA6BEB47519F8DB1CC /* ext.listToSig.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ext.listToSig.cpp; path = ../../../build/source/projects/ext.listToSig/sources/ext.listToSig.cpp; sourceTree = SOURCE_ROOT; };
@@ -104,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15FF0F66240243C30039EDCC /* libopus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15FF0F67240243C30039EDCC /* libopus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +189,8 @@
 		A321D1E11B9047499EE211E7 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				15FF0F682402440A0039EDCC /* headers */,
+				15FF0F65240243C30039EDCC /* libopus.a */,
 				6C5A27FA6BEB47519F8DB1CC /* ext.listToSig.cpp */,
 			);
 			name = "Source Files";
@@ -395,13 +403,17 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources/headers\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../max-api/include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/projects/ext.listToSig/../../min-api/test\"",
 				);
 				INFOPLIST_FILE = "/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/CMakeFiles/ext.listToSig.dir/Info.plist";
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources\"",
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"",
+				);
 				LIBRARY_STYLE = BUNDLE;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -4977,13 +4989,17 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources/headers\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../max-api/include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/projects/ext.listToSig/../../min-api/test\"",
 				);
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/tests/MinSizeRel\"";
-				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources\"",
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DNDEBUG",
@@ -7325,6 +7341,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources/headers\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../max-api/include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/projects/ext.listToSig/../../min-api/test\"",
@@ -7374,13 +7391,17 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources/headers\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../max-api/include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/projects/ext.listToSig/../../min-api/test\"",
 				);
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/tests/RelWithDebInfo\"";
-				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources\"",
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DNDEBUG",
@@ -9725,13 +9746,17 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources/headers\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../max-api/include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/projects/ext.listToSig/../../min-api/test\"",
 				);
 				INFOPLIST_FILE = "/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/CMakeFiles/ext.listToSig.dir/Info.plist";
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources\"",
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"",
+				);
 				LIBRARY_STYLE = BUNDLE;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -14309,13 +14334,17 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources/headers\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../max-api/include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/projects/ext.listToSig/../../min-api/test\"",
 				);
 				INFOPLIST_FILE = "/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/CMakeFiles/ext.listToSig.dir/Info.plist";
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources\"",
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"",
+				);
 				LIBRARY_STYLE = BUNDLE;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -18914,6 +18943,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources/headers\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../max-api/include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/projects/ext.listToSig/../../min-api/test\"",
@@ -18944,6 +18974,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources/headers\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../max-api/include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/projects/ext.listToSig/../../min-api/test\"",
@@ -19015,13 +19046,17 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources/headers\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../max-api/include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/projects/ext.listToSig/../../min-api/test\"",
 				);
 				INFOPLIST_FILE = "/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/CMakeFiles/ext.listToSig.dir/Info.plist";
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources\"",
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"",
+				);
 				LIBRARY_STYLE = BUNDLE;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -23587,6 +23622,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources/headers\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../max-api/include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/projects/ext.listToSig/../../min-api/test\"",
@@ -23626,13 +23662,17 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources/headers\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../max-api/include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/projects/ext.listToSig/../../min-api/test\"",
 				);
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/tests\"";
-				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources\"",
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++1z'  ";
 				OTHER_LDFLAGS = (
@@ -26012,13 +26052,17 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources/headers\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../max-api/include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/script/../include\"",
 					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/projects/ext.listToSig/../../min-api/test\"",
 				);
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/tests\"";
-				LIBRARY_SEARCH_PATHS = "\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/build/source/projects/ext.listToSig/sources\"",
+					"\"/Users/Takechi/Documents/Max 8/Packages/ext/source/min-api/max-api/lib/mac\"",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DNDEBUG",

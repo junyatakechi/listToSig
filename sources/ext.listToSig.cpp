@@ -4,7 +4,7 @@
 ///	@license	Use of this source code is governed by the MIT License found in the License.md file.
 
 #include "c74_min.h"
-#include <opus.h>
+#include "headers/opus.h"
 
 using namespace c74::min;
 
@@ -44,12 +44,13 @@ public:
         play_point = buf_length - 128;
 			
 				//opus init
-				dec = opus_decoder_create(48000, 1, err);
-//				if(*err!=OPUS_BAD_ARG || dec!=NULL){
-//						cout << "DECODER CREATED!" << endl;
-//				}else{
-//						cout << "error: opus init" << endl;
-//				}
+				dec = opus_decoder_create(48000, 1, &err);
+				//cout << err << endl;
+				if(err!= -1){
+						cout << "DECODER CREATED!" << endl;
+				}else{
+						cout << "error: opus init" << endl;
+				}
     };
 	
     // respond to the bang message to do something
@@ -101,9 +102,29 @@ public:
 					
     message<threadsafe::yes> list { this, "list", "Operate on the list. Either add it to the collection or calculate the mean.",
         MIN_FUNCTION{
+					
+						//!!!!!!!!!!Opus decoding!!!!!!!!!!!!!!!!!!!!!!!
+						//the maximum packet duration 120ms; 5760 for 48kHz
+						unsigned char payload[960];
+						signed int castInt;
+						auto i = 0;
+						for(double a : args){
+								castInt = (signed int)a;
+								payload[i] = (unsigned char)castInt;
+								i++;
+								//cout << payload[i] << endl;
+						}
+
+						float samps_len;
+						float pcm[960];
+						samps_len = opus_decode_float(dec, payload, i, pcm, 960, 0);
+						//cout << "samps_len is " << samps_len << endl;
+					
+						//!!!!!!!!!!END Opus decoding!!!!!!!!!!!!!!!!!!!!!!!
             for(double x : args){
                 //cout << x << endl;
                 buf[rec_point] = x;
+								//cout << rec_point << endl;
                 rec_point++;
                 if(rec_point > buf_length){
                     rec_point = 0;
@@ -120,9 +141,9 @@ private:
 	long play_point = 0;
 	//Opus decoder
 	OpusDecoder *dec;
-	int *err;
+	int err = 0;
 				
 	//lib::sync m_oscillator;
-
 };
+
 MIN_EXTERNAL(ext_listToSig);
